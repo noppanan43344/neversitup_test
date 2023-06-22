@@ -34,7 +34,7 @@ class _BitcoinPageState extends State<BitcoinPage> {
   }
 
   setUp() {
-    _model.timer = Timer.periodic(const Duration(seconds: 10), (Timer t) {
+    _model.timer = Timer.periodic(const Duration(seconds: 60), (Timer t) {
       if (mounted) {
         setState(() {
           _future = _model.getBitcoin();
